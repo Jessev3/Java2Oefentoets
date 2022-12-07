@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class Reactor {
+public class Reactor implements Checkable {
 
     private HashSet<Core> cores;
     private double steam;
@@ -48,5 +48,15 @@ public class Reactor {
 
         this.steam = steam;
         this.residualHeat = residualHeat;
+    }
+
+    public Status getStatus() {
+        Status status = Status.STABLE;
+        for (Core core : cores) {
+            if (core.getRestPercentage() <= 0.2) {
+                status = Status.NEEDS_ATTENTION;
+            }
+        }
+        return status;
     }
 }

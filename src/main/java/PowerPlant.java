@@ -2,11 +2,13 @@ public class PowerPlant {
     private Generator generator;
     private Reactor reactor;
     private Cooling cooling;
+    private ControlRoom controlRoom;
 
     public PowerPlant(Generator generator, Reactor reactor, Cooling cooling) {
         this.generator = generator;
         this.reactor = reactor;
         this.cooling = cooling;
+        this.controlRoom = new ControlRoom(generator, reactor, cooling);
     }
 
     public Generator getGenerator() {

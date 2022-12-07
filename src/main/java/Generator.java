@@ -1,4 +1,4 @@
-public class Generator {
+public class Generator implements Checkable {
     private double totalEnergy;
 
     public Generator() {
@@ -17,5 +17,13 @@ public class Generator {
         double kwh = steam * 7.0;
         this.totalEnergy += kwh;
         return kwh;
+    }
+
+    public Status getStatus() {
+        Status status = Status.STABLE;
+        if (this.totalEnergy > 560) {
+            status = Status.UNSTABLE;
+        }
+        return status;
     }
 }
