@@ -9,7 +9,11 @@ public class Ictium extends Core {
     }
 
     @Override
-    public SplitResult split(double temperature, int time) {
+    public SplitResult split(double temperature, int time) throws MeltdownException {
+        if (temperature > 150) {
+            throw new MeltdownException("Temperature is too high");
+        }
+
         double steam;
         double residualHeat;
         steam = 40 * temperature;

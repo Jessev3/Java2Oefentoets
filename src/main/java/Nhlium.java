@@ -8,9 +8,17 @@ public class Nhlium extends Core {
     }
 
     @Override
-    public SplitResult split(double temperature, int time) {
+    public SplitResult split(double temperature, int time) throws MeltdownException {
+        if (time > 60 && temperature > 100) {
+            throw new MeltdownException("Temperature and time are too high");
+        }
+        if(restPercentage < 0.1) {
+            throw new MeltdownException("Rest percentage of core is too low");
+        }
+
         double residualHeat;
         double steam;
+
         this.updateRestPercentage(time);
         if (temperature < MINIMUM_KELVIN) {
             steam = (temperature / 62) * time * 0.7;

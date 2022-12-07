@@ -36,9 +36,14 @@ public class PowerPlant {
     }
 
     public double run(double temperature, int time) {
-        SplitResult result = reactor.generateSteamAndEnergy(temperature, time);
-        cooling.abductResidualHeat(result.getResidualHeat());
-        return generator.generateEnergy(result.getSteam());
+        try{
+            SplitResult result = reactor.generateSteamAndEnergy(temperature, time);
+            cooling.abductResidualHeat(result.getResidualHeat());
+            return generator.generateEnergy(result.getSteam());
+        } catch (MeltdownException e) {
+            return 0;
+        }
+
     }
 
 }

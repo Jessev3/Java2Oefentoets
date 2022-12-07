@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797b3fda-510c-47b9-96b5-b3a64be220a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ictium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ictium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nhlium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nhlium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PowerPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PowerPlant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reactor.java" afterDir="false" />
     </list>
@@ -30,7 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2I7z4VEoeWBSyrFVwCQzbM06Ewo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

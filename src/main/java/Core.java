@@ -1,5 +1,4 @@
 public abstract class Core {
-
     int restPercentage;
 
     public Core() {
@@ -14,5 +13,5 @@ public abstract class Core {
         this.restPercentage = restPercentage;
     }
 
-    abstract SplitResult split(double temperature, int time);
+    abstract SplitResult split(double temperature, int time) throws MeltdownException;
 }

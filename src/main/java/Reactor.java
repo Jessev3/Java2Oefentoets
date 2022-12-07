@@ -16,7 +16,7 @@ public class Reactor implements Checkable {
         this.cores.add(core);
     }
 
-    public SplitResult generateSteamAndEnergy(double temperature, int time) {
+    public SplitResult generateSteamAndEnergy(double temperature, int time) throws MeltdownException {
         double steam = 0;
         double residualHeat = 0;
 
