@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797b3fda-510c-47b9-96b5-b3a64be220a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Checkable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ControlRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cooling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cooling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PowerPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PowerPlant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Reactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reactor.java" afterDir="false" />
     </list>
@@ -45,7 +39,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,7 +51,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669547221188</updated>
-      <workItem from="1670411192210" duration="2060000" />
+      <workItem from="1670411192210" duration="2090000" />
+      <workItem from="1670414765398" duration="2285000" />
     </task>
     <servers />
   </component>

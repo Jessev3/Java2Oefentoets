@@ -3,13 +3,9 @@ import java.util.HashSet;
 public class Reactor implements Checkable {
 
     private HashSet<Core> cores;
-    private double steam;
-    private double residualHeat;
 
     public Reactor() {
         this.cores = new HashSet<>();
-        this.steam = 0;
-        this.residualHeat = 0;
     }
 
     public HashSet<Core> getCores() {
@@ -20,23 +16,7 @@ public class Reactor implements Checkable {
         this.cores.add(core);
     }
 
-    public double getSteam() {
-        return steam;
-    }
-
-    public void setSteam(double steam) {
-        this.steam = steam;
-    }
-
-    public double getResidualHeat() {
-        return residualHeat;
-    }
-
-    public void setResidualHeat(double residualHeat) {
-        this.residualHeat = residualHeat;
-    }
-
-    public void generateSteamAndEnergy(double temperature, int time) {
+    public SplitResult generateSteamAndEnergy(double temperature, int time) {
         double steam = 0;
         double residualHeat = 0;
 
@@ -46,8 +26,7 @@ public class Reactor implements Checkable {
             residualHeat += splitResult.getResidualHeat();
         }
 
-        this.steam = steam;
-        this.residualHeat = residualHeat;
+        return new SplitResult(steam, residualHeat);
     }
 
     public Status getStatus() {
